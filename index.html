@@ -3,47 +3,66 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Bennehan and Cameron famiily plantations</title>
+  <title>Bennehan and Cameron family land</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
   <script src="https://kit.fontawesome.com/2cef05e51f.js" crossorigin="anonymous"></script>
   <script src="./script.js" defer></script>
   <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet" />
-  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet" />
-  
   <link href="./style.css" rel="stylesheet" />
 </head>
 
 <body>
+  <header>
+    <nav>
+      <div>
+        <ul>
+          <li>
+            <a>Cameron Family Land Map</a>
+          </li>
+          <li style="float:right">
+            <a class="nav-link" href="#">About</a>
+          <li style="float:right">
+            <a class="nav-link" href="familytree.html">Family Tree</a>
+          </li>
+          <li style="float:right">
+            <a class="nav-link " href="sources.html">Sources</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <div id='map'></div>
   <div class="dateslider-box">
     <div class="dateslider-inner">
       <p><strong>Date: </strong>
         <span type="text" id="amount"></span>
       </p>
-      <p><input type="range" min=-6122027038000 max=-315601438000 step=86400000 value=-6109585200000 id="dateslider"></p>
+      <p><input type="range" min=-6122027038000 max=-315601438000 step=86400000 value=-6109585200000 id="dateslider">
+      </p>
     </div>
   </div>
   <div class="toggle-box">
-    
+
     <p><label for="satellite-toggle">Satellite</label>
       <input type="checkbox" id="satellite-toggle" class="switch"><span class="slider"></span>
-    </p> 
+    </p>
     <p><label for="labels-toggle">Owners</label>
       <input type="checkbox" id="labels-toggle" class="switch" checked><span class="slider"></span>
     </p>
     <p><label for="borders-toggle">Borders</label>
       <input type="checkbox" id="borders-toggle" class="switch" checked><span class="slider"></span>
     </p>
-    <p><label for="plantations-toggle">Plantations</label>
+    <p style="text-align: left;"><label for="plantations-toggle">19th century <br> place names</label>
       <input type="checkbox" id="plantations-toggle" class="switch"><span class="slider"></span>
-    </p> 
+    </p>
   </div>
-<!--  <div class="info-box">
+ <div class="info-box">
     <i class="fa-solid fa-circle-info"></i>
-    <span class="info-text">Data adapted from The Newberry Library's <a href="https://digital.newberry.org/ahcb/" target="_blank" rel="noopener noreferrer">Atlas of Historical County Boundaries</a>
+    <span class="info-text"><p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
     </span>
-  </div> -->
+  </div> 
 </body>
 
 </html>

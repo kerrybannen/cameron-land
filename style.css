@@ -8,6 +8,12 @@ body {
   top: 0;
   bottom: 0;
   width: 100%;
+  margin-top: 46px;
+}
+
+
+nav li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .dateslider-box {
@@ -17,6 +23,7 @@ body {
   top: 0;
   left: 0;
   padding: 10px;
+  margin-top: 50px;
 }
 
 .dateslider-box .dateslider-inner {
@@ -53,6 +60,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   text-align: right;
+  margin-top: 50px;
 }
 
 .info-box {
@@ -92,7 +100,7 @@ body {
 
 .mapboxgl-popup {
   max-width: none;
-  font: 12px/20px "DIN Pro Medium", Arial, Helvetica, sans-serif;
+  font: 12px/20px Arial, Verdana, Helvetica, sans-serif;
 }
 
 .mapboxgl-popup-content {
@@ -102,4 +110,89 @@ body {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 10px 10px 15px;
   pointer-events: auto;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: .6em;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 80%;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  margin-inline-start: 1em;
+  padding: 0;
+}
+
+img {
+  width: 90%;
+  margin: 5%;
+}
+
+.sources {
+  margin: 2%;
+}
+
+.sources p {
+  font-family: Tahoma, Geneva, Verdana, sans-serif
+}
+
+.sources h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sources h1,
+h3,
+li,
+table {
+  font-family: Tahoma, Geneva, Verdana, sans-serif
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: white;
+}
+
+nav li {
+  display: inline;
+  float: left;
+  font: 15px "DIN Pro Medium", Verdana, Helvetica, sans-serif;
+}
+
+nav li .active {
+  font-weight: bold;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #c9c9c9
+}
+
+table,
+th,
+td {
+  border-style: solid;
+}
+
+th,
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
