@@ -1,0 +1,61 @@
+body {
+    margin-right: 5%;
+}
+
+small.marriage {
+    color: crimson;
+    padding: 5px;
+}
+
+span.notes {
+    font-style: italic;
+    float: right;
+    content: leader(dotted);
+}
+
+li::before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+}
+
+li {
+    display: block;
+}
+
+ul.firstgen li::before {
+    color:black;
+}
+
+ul.secondgen li::before {
+    color: red;
+}
+
+ul.thirdgen li::before {
+    color: blue;
+}
+
+ul.fourthgen li::before {
+    color: green;
+}
+
+ul.fifthgen li::before {
+    color: orange;
+}
+
+ul.sixthgen li::before {
+    color: lightskyblue;
+}
+
+ul.seventhgen li::before {
+    color: gold
+}
+
+li.exception::before  {
+    color: transparent !important;
+}
+
