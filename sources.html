@@ -3,6 +3,7 @@
   <title>Bennehan and Cameron famiily sources</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://kit.fontawesome.com/2cef05e51f.js" crossorigin="anonymous"></script>
+  <script src="./sources.js" defer></script>
   <link href="./style.css" rel="stylesheet" />
 </head>
 
@@ -30,19 +31,35 @@
     <div>
       <h1>Sources</h1>
     </div>
+
+    <div id="image-viewer" class="image-viewer">
+      <span class="close">&times;</span>
+    
+      <!-- Modal Content (The Image) -->
+      <img class="full-image" id="fullImg">
+    
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
     <div class="deed">
       <h2>1776 &mdash; Tyree Harris to Richard Bennehan</h2>
       <h3>Brick House Plantation</h3>
       <h3>00133_2103_0006</h3>
-      <img src="img/00133_2103_0006.jpg" class="mx-auto d-block img-fluid">
-    </div>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-1.png"></div>
+      <div class="archive-image">
+      <img class="map-image" src="img/00133_2103_0006.jpg" alt="00133_2103_0006" style="object-fit:contain; height:300px;"></div>
+    </div></div>      
     <hr>
     <div class="deed">
       <h2>1776-05-24 &mdash; Tyree & Mary Ann Harris to Richard Bennehan</h2>
       <h3>00133_op0101 (description only)</h3>
       <h3>00133_2106_0037 (plat)</h3>
       <h3>appears on 00133_op0031</h3>
-      <p><b>date:</b> May 24, 1776 <br>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-2.png"></div>
+        <div class="deed-details">
+        <p><b>date:</b> May 24, 1776 <br>
         <b>from:</b> Tyree Harris and wife Mary Ann Harris <br>
         <b>to:</b> Richard Bennehan <br>
         <b>amount paid:</b> &pound;100 <br>
@@ -63,9 +80,9 @@
         <li>down creek to an ash, sycamore, and mulberry tree where the creek empties into the Flat River</li>
         <li>down Flat River to first station</li>
       </ul>
-      </p>
-      <img src="img/00133_2106_0037.jpg" class="mx-auto d-block img-fluid">
-      <img src="img/00133_op0031_0001.jpg" class="mx-auto d-block img-fluid">
+      </p></div>
+        <div class="archive-image"><img class="map-image" src="img/00133_2106_0037.jpg" alt="00133_2106_0037" style="object-fit:contain; height:300px;"></div>
+        <div class="archive-image"><img class="map-image" src="img/00133_op0031_0001.jpg" alt="00133_op0031_0001" style="object-fit:contain; height:300px;"></div>
       <!--
       <table>
         <tr>
@@ -142,6 +159,10 @@
       <h2>1786-08-31 &mdash; James Monroe to Richard Bennehan</h2>
       <h3>Orange DB 3-166</h3>
       <h3>shown on 00133_2106_0037</h3>
+      <div class="flex">
+        <div class="tract-map">
+        <img class="map-image" src="img/map-3.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> August 31, 1786 <br>
         <b>from:</b> James Freeland (high sheriff of Orange County) / James Monro <br>
         <b>to:</b> Richard Bennehan <br>
@@ -153,20 +174,21 @@
         <li>beginning at a pine at Mitchell’s corner</li>
         <li>along Bogan’s line south 45&deg; east 224 poles to his corner (56 chains)</li>
         <li><i>[south 45&deg; west 365 poles to the corner of the tract William Sutton lives (91.25 chains)]</i></li>
-        <li>corner where William Seeton used to live south 87&deg; east 314 poles to Thomas Webb’s line (78.5 chains)
-        </li>
+        <li>corner where William Seeton used to live south 87&deg; east 314 poles to Thomas Webb’s line (78.5 chains)</li>
         <li>north 55&deg; <i>[5&deg; east]</i> 212 poles along Webb’s line to his other corner (53 chains)</li>
-        <li>along his other tract north 17&deg; west 320 poles <i>[to a stake John Mitchel’s corner McStag’s line,
-            thence along the same] </i> to the beginning (80 chains)</li>
+        <li>along his other tract north 17&deg; west 320 poles <i>[to a stake John Mitchel’s corner McStag’s line, thence along the same] </i> to the beginning (80 chains)</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1787-02-27 &mdash; Judith Stagg to Richard Bennehan </h2>
       <h3>Orange DB 3-51</h3>
       <h3>00133_op0006 (description only)</h3>
       <h3>appears on 00133_op0031</h3>
+      <div class="flex"><div class="tract-map">
+        <img class="map-image" src="img/map-4.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> February 27, 1787 <br>
         <b>from:</b> heirs of Thomas Stagg dec’d <br> Judith Stagg (widow of Thomas Stagg) <br> William Ray and Mary
         Stagg (daughter of Thomas and Judith Stagg) <br> George Laws Jr and Susanna Stagg (daughter of Thomas and Judith
@@ -179,7 +201,7 @@
         <b>description:</b> land situated lying & being in the county of Orange & state aforesaid on the south west side
         of flat river called and known by the name of Stagg Old Raw Ground adjoining the lands of William Johnston
         deceased & Richard Bennehan supposed to contain in the whole sixty six acres of land
-      </p>
+      </p></div>
       <!--
         <table>
         <tr>
@@ -212,12 +234,14 @@
         </tr>
       </table>
       -->
-    </div>
+    </div></div>
     <hr>
     <div class="deed">
       <h2>1788-03-31 &mdash; Joseph Speed to Richard Bennehan</h2>
       <h3>Orange DB 4-1</h3>
-      <p>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-5.png"></div>
+      <div class="deed-details"><p>
         <b>date:</b> March 31, 1788 <br>
         <b>from:</b> Joseph Speed <br>
         <b>to:</b> Richard Bennehan <br>
@@ -231,12 +255,15 @@
         <li>along his line west 226 (56.5 chains) to his corner on the river bank</li>
         <li>up the river to start</li>
       </ul>
-      </p>
-    </div>
+      </p></div>
+    </div></div>
     <hr>
     <div class="deed">
       <h2>1789-10-15 &mdash; Caleb Brasfield to Richard Bennehan</h2>
       <h3>Granville DB O-630</h3>
+      <div class="flex">
+      <div class="tract-map"><img class="map-image" src="img/map-6.png"></div>
+      <div class="deed-details">
       <p>
         <b>date:</b> October 15, 1789 <br>
         <b>from:</b> Caleb & Lucy Brasfield <br>
@@ -251,24 +278,31 @@
         <li>down the creek to the river</li>
         <li>up the river to the beginning</li>
       </ul>
-      </p>
-    </div>
+      </p></div>
+    </div></div>
     <hr>
+    <!--
     <div class="deed">
       <h2>1794-01-18 &mdash; James Harris to Richard Bennehan</h2>
       <h3>Orange DB 5-75</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image"></div>
+        <div class="deed-details">
       <p><b>date:</b> January 18, 1794 <br>
         <b>from:</b> James Harris <br>
         <b>to:</b> Richard Bennehan <br>
         <b>amount paid:</b> 60 pounds 10 shillings <br>
         <b>acres:</b> 320 <br>
         <b>description:</b> all that tract or parcel of land situate and being in the county of Orange & in the fork of Flat River and Eno and being the land which my father James Harris did by his last will and testament bearing date the twenty sixth day of August 1785 give and devise unto me the said James Harris
-      </p>
+      </p></div></div>
     </div>
-    <hr>
+    <hr> -->
     <div class="deed">
       <h2>1796-11-02 &mdash; John Martin to Richard Bennehan</h2>
       <h3>Orange DB 5-648</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-7.png"></div>
+        <div class="deed-details">
       <p>
         <b>date:</b> November 2, 1796 <br>
         <b>from:</b> John Martin <br>
@@ -276,35 +310,15 @@
         <b>amount paid:</b> &pound;200 Virginia money <br>
         <b>acres:</b> 450 <br>
         <b>description: </b> a tract or parcel of land situate lying and being in the said state of North Carolina and in the said county of Orange on little river containing four hundred and fifty acres more or less and is bounded by the lands of the Richard Bennehan and others agreeable to the boundaries that is mentioned in two Deeds that are properly proved recorded and registered in the State of North Carolina wherein James Martin purchased the said land from William Ray and his wife and from Osson Martin and others as will fully appear by the said deeds and which said deeds the said Bennehan hath now in his possession the said land is the whole and all the lands the said James Martin owned and lived on in the said state of North Carolina and in the county of Orange for some time before his death and the said James Martin did in his last will and testament give and devise the said land to his brother John Martin and to his heirs forever and which said will is proved and recorded in the county court of Prince George in the state of Virginia and that after the death of the said James Martin the said John Martin his brother who then lived in the county of Chesterfield in the state of Virginia made and published his last will and testament wherein and whereby he gave devised and bequeath the above mentioned tract or parcel of land of four hundred and fifty acres more or less to his son John Martin and to his heirs and assigns forever who is the party to this deed and that the will of the said John Martin who was the brother to the said James Martin deceased is legally proved and recorded in the county of Chesterfield in the state of Virginia
-      </p>
-    </div>
-    <hr>
-    <div class="deed">
-      <h2>1796-11-28 &mdash; UNC Trustees to Richard Bennehan</h2>
-      <h3>Orange DB 5-624</h3>
-      <h3>00133_op0011</h3>
-      <h3>00133_2106_0003</h3>
-      <h3>70117_005-0014_0049</h3>
-      <h3>appears on 00133_op0031</h3>
-      <p><b>date:</b> November 28, 1796 <br>
-        <b>from:</b> Trustees of the University of North Carolina <br>
-        <b>to:</b> Richard Bennehan <br>
-        <b>amount paid:</b> 55 pounds 11 shillings and sixpence <br>
-        <b>acres:</b> 247 <br>
-        <b>description:</b>
-      <ul>
-        <li>corner of Alves tract running east 46.5 chains to hickory on another Alves tract (Mitchell’s tract)</li>
-        <li>north 40&deg; east 31 chains to dead oak to Bennehan and Horton tracts</li>
-        <li>55&deg; west 40 chains to hickory on Williams line</li>
-        <li>north 82&deg; west along said line 39.5 chains to Walters other corner</li>
-        <li>south 5&deg; east 52 chains along Walters line</li>
-      </ul>
-      </p>
+      </p></div></div>
     </div>
     <hr>
     <div class="deed">
       <h2>1796-11-15 &mdash; John Marshall to Richard Bennehan</h2>
       <h3>Granville DB Q-28</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-8.png"></div>
+        <div class="deed-details">
       <p>
         <b>date:</b> November 15, 1796 <br>
         <b>from:</b> John Marshall <br>
@@ -320,11 +334,41 @@
         <li>up the Creek to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
+    <div class="deed">
+      <h2>1796-11-28 &mdash; UNC Trustees to Richard Bennehan</h2>
+      <h3>Orange DB 5-624</h3>
+      <h3>00133_op0011</h3>
+      <h3>00133_2106_0003</h3>
+      <h3>70117_005-0014_0049</h3>
+      <h3>appears on 00133_op0031</h3>
+      <div class="flex">
+      <div class="tract-map"><img class="map-image" src="img/map-9.png"></div>
+      <div class="deed-details">
+      <p><b>date:</b> November 28, 1796 <br>
+        <b>from:</b> Trustees of the University of North Carolina <br>
+        <b>to:</b> Richard Bennehan <br>
+        <b>amount paid:</b> 55 pounds 11 shillings and sixpence <br>
+        <b>acres:</b> 247 <br>
+        <b>description:</b>
+      <ul>
+        <li>corner of Alves tract running east 46.5 chains to hickory on another Alves tract (Mitchell’s tract)</li>
+        <li>north 40&deg; east 31 chains to dead oak to Bennehan and Horton tracts</li>
+        <li>55&deg; west 40 chains to hickory on Williams line</li>
+        <li>north 82&deg; west along said line 39.5 chains to Walters other corner</li>
+        <li>south 5&deg; east 52 chains along Walters line</li>
+      </ul>
+      </p>
+    </div></div></div>
+    <hr>
+
     <div class="deed">
       <h2>1797-01-16 &mdash; Bryan Stonum to Richard Bennehan</h2>
       <h3>Granville DB Q-27</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-10.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> January 16, 1797 <br>
         <b>from:</b> Bryan Stonum <br>
         <b>to:</b> Richard Bennehan <br>
@@ -339,12 +383,15 @@
         <li>north 75 poles to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1797-07-04 &mdash; James Williams to Richard Bennehan</h2>
       <h3>Orange DB 6-41</h3>
       <h3>appears in 00133_xop0032_0001</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-11.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> July 4, 1797 <br>
         <b>from:</b> Andrew Murdock (sheriff) / James Williams <br>
         <b>to:</b> Richard Bennehan <br>
@@ -360,7 +407,7 @@
         <li>south 65 chains</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1799-11-28 &mdash; UNC Trustees to Richard Bennehan</h2>
@@ -368,6 +415,9 @@
       <h3>00133_op0010</h3>
       <h3>00133_2102_0001</h3>
       <h3>appears on 00133_op0031</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-12.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> November 28, 1799 <br>
         <b>from:</b> UNC Trustees / William Sheppard <br>
         <b>to:</b> Richard Bennehan <br>
@@ -379,14 +429,12 @@
         <li>north 65 chains 50 links</li>
         <li>along Montgomery’s line east 4 chains</li>
         <li>north 22 chains</li>
-        <li>north 55&deg; east 12 chains <i>[north 55&deg; east 8 chains to a stake a corner to said Bennehan’s Rickets
-            land]</i></li>
-        <li>south 1.5&deg; east 80 chains <i>[thence with a line of the same south 4.5&deg; east to and along a line of
-            Dickens & Waites in all 80 chains]</i></li>
+        <li>north 55&deg; east 12 chains <i>[north 55&deg; east 8 chains to a stake a corner to said Bennehan’s Rickets land]</i></li>
+        <li>south 1.5&deg; east 80 chains <i>[thence with a line of the same south 4.5&deg; east to and along a line of Dickens & Waites in all 80 chains]</i></li>
         <li>along Banks Tract south 35&deg; west 20 chains 50 links</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1801-04-16 &mdash; Anthony Ricketts to Richard Bennehan</h2>
@@ -396,6 +444,9 @@
       <h3>00133_op0018 (1804-03-20)</h3>
       <h3>00133_op0013</h3>
       <h3>appears on 00133_op0031</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-13.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> April 16, 1801 <br>
         <b>from:</b> Anthony Ricketts <br>
         <b>to:</b> Richard Bennehan <br>
@@ -417,12 +468,15 @@
         <li>north 55 degrees east to the beginning </li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1801-12-23 &mdash; John Tilley Jr to Richard Bennehan</h2>
       <h3>Orange DB 10-48</h3>
       <h3>appears on 00133_op0031</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-14.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> December 23, 1801 <br>
         <b>from:</b> John Tilley Jr <br>
         <b>to:</b> Richard Bennehan <br>
@@ -442,11 +496,14 @@
         <li>south 55&deg; west 36.5 chains to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1802-06-03 &mdash; John Marshall to Duncan Cameron</h2>
       <h3>Granville DB R-37</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-17.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> June 3, 1802 <br>
         <b>from:</b> John Marshall & John Longmire <br>
         <b>to:</b> Duncan Cameron <br>
@@ -462,11 +519,14 @@
         <li>with his line north 52&deg; east to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1802-06-20 &mdash; Jacob Bledsoe to Richard Bennehan</h2>
       <h3>Wake DB R-168</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-15.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> June 20, 1802 <br>
         <b>deed date:</b> March 16, 1802 <br>
         <b>from:</b> Jacob Bledsoe <br>
@@ -489,11 +549,14 @@
         <li>up the meanders of the river to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1802-06-20 &mdash; Jacob Bledsoe to Richard Bennehan</h2>
       <h3>Wake DB R-169 </h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-16.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> June 20, 1802 <br>
         <b>date:</b> March 16, 1802 <br>
         <b>from:</b> Jacob Bledsoe <br>
@@ -509,11 +572,14 @@
         <li>down the meanders of the river to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1803-04-04 &mdash; Richard Bennehan to Duncan Cameron</h2>
       <h3>Orange DB 14-35</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-18.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> April 4, 1803 <br>
         <b>from:</b> Richard Bennehan <br>
         <b>to:</b> Duncan Cameron <br>
@@ -527,11 +593,14 @@
         <li>up Reeds Creek</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1803-09-18 &mdash; John Marshall and John Longmire to Duncan Cameron</h2>
       <h3>Wake DB R-347</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-20.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> September 18, 1803 <br>
         <b>deed date:</b> July 22, 1803 <br>
         <b>from:</b> John S. West (marshall) / John Marshall and John Longmire <br>
@@ -553,11 +622,14 @@
         <li>with Ward and Brogdon’s lines north to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1805-11-07 &mdash; Isaac McCallum to Richard Bennehan</h2>
       <h3>Wake DB T-21</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-23.png"></div>
+        <div class="deed-details">
       <p>b>recorded date:</b> November 7, 1805 <br>
         <b>date:</b> December 20, 1804 <br>
         <b>from:</b> Isaac McCallum <br>
@@ -573,12 +645,15 @@
         <li>down the courses of the River to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1805-11-13 &mdash; John P. Smith to Duncan Cameron</h2>
       <h3>Orange DB 12-108</h3>
       <h3>00133_2103_0005</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-25.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> November 13, 1805 <br>
         <b>from:</b> John Pryor Smith <br>
         <b>to:</b> Duncan Cameron <br>
@@ -592,13 +667,18 @@
         <li>along gutt near Eno, up Eno as it meanders to the mouth of Little River</li>
         <li>up Little River to the beginning</li>
       </ul>
-      </p>
-      <img src="img/00133_2103_0005.jpg" class="mx-auto d-block img-fluid">
+      </p></div></div>
+      <div class="archive-image">
+      <img class="map-image" src="img/00133_2103_0005.jpg" style="object-fit:contain; height:300px;"></div>
     </div>
     <hr>
     <div class="deed">
       <h2>1806-04-28 &mdash; Richard Bennehan to Thomas D. Bennehan and Duncan Cameron</h2>
       <h3>Wake DB T-201</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-26.png"></div>
+        <div class="tract-map"><img class="map-image" src="img/map-27.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> April 28, 1806 <br>
         <b>deed date:</b> March 10, 1806 <br>
         <b>from:</b> Richard Bennehan <br>
@@ -606,7 +686,10 @@
         <b>amount paid:</b> love &plus; &dollar;5<br>
         <b>acres:</b> 462 &plus; 120 &plus; 150.5 &plus; 291 &plus; 244 &plus; 320 &plus; 694<br>
         <b>description:</b> <br>
-      </p>
+      </p></div></div>
+      <div class="flex">
+        
+        <div class="deed-details">
       <p>Tract 1 &mdash; 462 acres (see Jacob Bledsoe to Richard Bennehan (Wake DB R-168))
       <ul>
         <li>beginning at McCallum’s corner red oak on the bank of Neuse River at the foot of a bridge</li>
@@ -620,8 +703,14 @@
         <li>down the branch to the mouth at a water oak </li>
         <li>up the meanders of the river to the beginning</li>
       </ul>
-      </p>
-      <p>Tract 2 &mdash; 120 acres (see Jacob Bledsoe to Richard Bennehan (Wake DB R-169))</p>
+      </p></div>
+      <div class="tract-map"><img class="map-image" src="img/map-15.png"></div>
+      <div class="flex">
+        <div class="deed-details">
+      <p>Tract 2 &mdash; 120 acres (see Jacob Bledsoe to Richard Bennehan (Wake DB R-169))</p></div>
+      <div class="tract-map"><img class="map-image" src="img/map-16.png"></div></div>
+      <div class="flex">
+          <div class="deed-details">
       <p>Tract 3 &mdash; 150.5 acres
       <ul>
         <li>beginning at a Spanish oak, formerly Clements and Ferrell’s corner on the bank of the Neuse River</li>
@@ -630,8 +719,16 @@
         <li>north 46&deg; west along his line to a post oak</li>
         <li>south 44&deg; west 144 poles to the beginning</li>
       </ul>
-      </p>
-      <p>Tract 4 &mdash; 291 acres (Isaac McCallum to Richard Bennehan (Wake DB T-21))</p>
+      </p></div>
+      <div class="tract-map"></div></div>
+      <div class="flex">
+        
+        <div class="deed-details">
+      <p>Tract 4 &mdash; 291 acres (Isaac McCallum to Richard Bennehan (Wake DB T-21))</p></div>
+      <div class="tract-map"><img class="map-image" src="img/map-23.png"></div></div>
+      <div class="flex">
+        
+        <div class="deed-details">
       <p>Tract 5 &mdash; 244 acres
       <ul>
         <li>beginning at a red oak and gum on bank of Neuse River (formerly Alston’s corner)</li>
@@ -640,7 +737,10 @@
         <li>north 29&deg; east 313 poles to a red oak on bank of river (78.25 chains)</li>
         <li>down courses of the river to the beginning</li>
       </ul>
-      </p>
+      </p></div><div class="tract-map"></div></div>
+      <div class="flex">
+        
+        <div class="deed-details">
       <p>Tract 6 &mdash; 320 acres
       <ul>
         <li>beginning at a red oak formerly Judith Matthew’s corner on the bank of Neuse River</li>
@@ -649,7 +749,10 @@
         <li>north 29&deg; east 336 poles to a red oak on the river above the mouth of a gut (84 chains)</li>
         <li>up the courses of the river to the beginning</li>
       </ul>
-      </p>
+      </p></div><div class="tract-map"></div></div>
+      <div class="flex">
+        
+        <div class="deed-details">
       <p>Tract 7 &mdash; 694 acres (see John Bell to Richard Bennehan (Wake DB T-265))
       <ul>
         <li>beginning at a white oak on Brogden’s corner</li>
@@ -663,12 +766,15 @@
         <li>with his and Ward’s lines east crossing the main ledge 118 poles to a red oak on Ward’s corner</li>
         <li>with his and Brogden’s lines north to the beginning</li>
       </ul>
-      </p>
+      </p></div><div class="tract-map"><img class="map-image" src="img/map-24.png"></div></div>
     </div>
     <hr>
     <div class="deed">
       <h2>1806-07-30 &mdash; Charles Kennon to Richard Bennehan</h2>
       <h3>Orange DB 12-291</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-28.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> July 30, 1806 <br>
         <b>from:</b> Charles Kennon <br>
         <b>to:</b> Richard Bennehan <br>
@@ -676,11 +782,14 @@
         <b>acres:</b> 100 <br>
         <b>description:</b> tract of land situate lying and being in the county of Orange on the south side of the River Eno bounded by the lands of John Arnold Senr and William Leathers Senr and the said River it being all the land attached to the water grist mill erected on the said river containing one hundred acres more or less together with the said grist mill
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1806-08-21 &mdash; John and William Bell to Richard Bennehan</h2>
       <h3>Wake DB T-265</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-24.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> August 21, 1806 <br>
         <b>deed date:</b> May 24, 1806 <br>
         <b>from:</b> John Bell and William Bell, merchants and co-partners in trade <br>
@@ -701,11 +810,14 @@
         <li>with his and Brogden’s lines north to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1807-03-17 &mdash; Joseph Gales to Thomas D. Bennehan and Duncan Cameron</h2>
       <h3>Wake DB U-20</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-29.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> March 17, 1807 <br>
         <b>from:</b> Joseph Gales <br>
         <b>to:</b> Thomas D. Bennehan and Duncan Cameron <br>
@@ -722,11 +834,14 @@
         <li>to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1808-12-14 &mdash; John and William Bell to Richard Bennehan</h2>
       <h3>Granville DB T-306</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-30.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> <br>
         <b>from:</b> John Bell and William Bell, merchants and co-partners in trade <br>
         <b>to:</b> Richard Bennehan <br>
@@ -743,7 +858,7 @@
         <li>with his line to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1810-07-18 &mdash; Richard Bennehan to Duncan Cameron</h2>
@@ -751,6 +866,9 @@
       <h3>00133_2106_0005</h3>
       <h3>00133_2106_0007</h3>
       <h3>00133_2106_0012</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-31.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> July 18, 1810 <br>
         <b>from:</b> Richard Bennehan <br>
         <b>to:</b> Duncan Cameron <br>
@@ -768,15 +886,17 @@
         <li>north 73&deg; east 26.5 chains</li>
         <li>along the mill road to Webb’s line to beginning</li>
       </ul>
-      </p>
-      <img src="img/00133_2106_0005.jpg" class="mx-auto d-block img-fluid">
-      <img src="img/00133_2106_0007.jpg" class="mx-auto d-block img-fluid">
-      <img src="img/00133_2106_0012.jpg" class="mx-auto d-block img-fluid">
-    </div>
+      </p></div>
+      <div class="archive-image"><img class="map-image" src="img/00133_2106_0005.jpg" alt="00133_2106_0005" style="object-fit:contain; height:300px;"></div>
+      <div class="archive-image"><img class="map-image" src="img/00133_2106_0007.jpg" alt="00133_2106_0007" style="object-fit:contain; height:300px;"></div>
+      <div class="archive-image"><img class="map-image" src="img/00133_2106_0012.jpg" alt="00133_2106_0012" style="object-fit:contain; height:300px;"></div></div>
     <hr>
     <div class="deed">
       <h2>1812-09-09 &mdash; Walter Alves to Richard Bennehan</h2>
       <h3>Orange DB 14-109</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-34.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> September 9, 1812 <br>
         <b>from:</b> Walter Alves <br>
         <b>to:</b> Richard Bennehan <br>
@@ -791,12 +911,15 @@
         <li>south 45&deg; east 61 chains to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1812-11-06 &mdash; Walter Alves to Thomas D. Bennehan</h2>
       <h3>Orange DB 14-152</h3>
       <h3>00133_2103_0024</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-35.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> November 6, 1812 <br>
         <b>from:</b> Walter Alves <br>
         <b>to:</b> Thomas D. Bennehan <br>
@@ -812,11 +935,14 @@
         <li>down the river to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1814-03-01 &mdash; John Alston to Duncan Cameron</h2>
       <h3>Orange DB 14-335 </h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-37.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> March 1, 1814 <br>
         <b>from:</b> John Alston <br>
         <b>to:</b> Duncan Cameron <br>
@@ -845,11 +971,14 @@
         <li>up the meanders of Neuse to first station</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1816-03-10 &mdash; John Arnold Jr and Fielding Leathers to Duncan Cameron</h2>
       <h3>Orange DB 15-381</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-38.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> March 10, 1816 <br>
         <b>from:</b> John Arnold Jr and Fielding Leathers <br>
         <b>to:</b> Duncan Cameron <br>
@@ -868,11 +997,14 @@
         <li>down the river as it meanders to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1816-04-25 &mdash; William and Fielding Leathers to Thomas D. Bennehan</h2>
       <h3>Orange DB 17-117 </h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-39.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> April 25, 1816 <br>
         <b>from:</b> William Leathers Jr and Fielding Leathers <br>
         <b>to:</b> Thomas D. Bennehan <br>
@@ -896,12 +1028,15 @@
         <li>up the river to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1816-06-05 &mdash; Hugh Cain to Duncan Cameron</h2>
       <h3>Orange DB 15-382</h3>
       <h3>00133_2103_0001</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-40.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> June 5, 1816 <br>
         <b>from:</b> Hugh Cain <br>
         <b>to:</b> Duncan Cameron <br>
@@ -916,11 +1051,14 @@
         <li>north 42&deg; east 10.25 chains to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1821-01-25 &mdash; Walter Alves estate to Duncan Cameron</h2>
       <h3>Orange DB 19-278</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-42.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> January 25, 1821 <br>
         <b>from:</b> James Alves (executor of Walter Alves’s will) <br>
         <b>to:</b> Duncan Cameron <br>
@@ -988,13 +1126,16 @@
         <li>south 32&deg; east 5 chains 50 links to a gum on the river bank (Hugh Cain’s corner)</li>
         <li>up Little River as it meanders to the beginning</li>
       </ul>
-      </p>
-      <img src="img/00133_op0019_0001.jpg" class="mx-auto d-block img-fluid">
+      </p></div></div>
+      <img class="map-image" src="img/00133_op0019_0001.jpg" alt="00133_op0019_0001" style="object-fit:contain; height:300px;">
     </div>
     <hr>
     <div class="deed">
       <h2>1821-01-27 &mdash; Duncan Cameron to Thomas D. Bennehan</h2>
       <h3>Orange DB 23-211</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-43.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> January 27, 1821 <br>
         <b>from:</b> Duncan Cameron <br>
         <b>to:</b> Thomas D. Bennehan <br>
@@ -1011,11 +1152,14 @@
         <li>down the meanders of the river to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1821-10-02 &mdash; James Briggs to Duncan Cameron</h2>
       <h3>Orange DB 19-290 </h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-45.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> October 2, 1821 <br>
         <b>from:</b> James Briggs <br>
         <b>to:</b> Duncan Cameron <br>
@@ -1023,7 +1167,7 @@
         <b>acres:</b> 200 <br>
         <b>description:</b> one certain tract or parcel of land situate lying and being in the county and the state aforesaid adjoining to & bounded by the lands of Thomas Reavis and the lands of the said Duncan lately belonging to Samuel Southerland, James Kimbrough and [?] Ellis Arnolds and the lands formerly owned by William Leathers it being the same tract or parcel of land conveyed by John Alston Senr to the said James Briggs by deed &hellip; containing two hundred acres
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <!--<div class="deed">
       <h2>1822-01-14 &mdash; James Kimbrough to Duncan Cameron</h2>
@@ -1068,6 +1212,9 @@
       <h2>1823-10-24 &mdash; William Horton to Thomas D. Bennehan</h2>
       <h3>Orange DB 22-11</h3>
       <h3>00133_2103_0019</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-48.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> October 24, 1823 <br>
         <b>from:</b> William Horton <br>
         <b>to:</b> Thomas D. Bennehan <br>
@@ -1083,14 +1230,17 @@
         <li>north 55&deg; east 42 chains 25 links to a stone</li>
         <li>south 55&deg; east 42 chains 40 links to first station</li>
       </ul>
-      </p>
-      <img src="img/00133_2103_0019.jpg" class="mx-auto d-block img-fluid">
+      </p></div><div class="archive-image">
+      <img class="map-image" src="img/00133_2103_0019.jpg" alt="00133_2103_0019" style="object-fit:contain; height:300px;"></div>
       <p>the above plat represents 3 tracts of land viz. / No. 1 Mrs. Horton’s Beginning at an old post oak on a branch & on a line of a tract called Bankses, Running thence with a line of the same north 35&deg; east to the land of Dickins & Waite the same course continued with their line to Mr Bennehan’s continued with his line in all 97 chains to Flat River, then down the same to the mouth of a branch which divides the lands of Horton from T. Bennehan, then up the various courses of said branch to the beginning & contains 225 acres.<br> No. 2 Mrs. Horton’s Banks tract beginning at a red oak on a line of the old Tract, running thence north 35&deg; west forty one chains to a red oak a corner to Mr Bennehan’s Staggs Tract, thence north 55&deg; west 41 chains to a p oak thence north 35&deg; east 41 chains to a [hickory?] a corner to Dickens & Waite, thence south 55&deg; east 41 chains to the beginning. <br> No. 3 – Robert Dickins & William Waite bounded on the south by the Banks Tract on the west by a line of McCulloh’s 1499 acre tract on the north by Mr. Bennehan’s Ricket land & on the east by Horton’s old tract, survey’d March 14th 1801 </p>
-    </div>
+    </div></div>
     <hr>
     <div class="deed">
       <h2>1826-08-01 &mdash; Thomas D. Bennehan to Duncan Cameron</h2>
       <h3>00133_2094_0025</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src=""></div>
+        <div class="deed-details">
       <p><b>date:</b> August 1826 <br>
         <b>from:</b> Thomas D. Bennehan <br>
         <b>to:</b> Duncan Cameron <br>
@@ -1101,11 +1251,14 @@
       <p>also one other tract on the River Eno on the south side thereof adjoining the tract above mentioned, being all the land conveyed by William Leathers and Fielding Leathers to the said Thomas D. Bennehan by deed bearing date the 25th April 1816 reference being had thereto, the metes and boundaries of the said tract of land will fully and at large appear, containing two hundred and ninety four and three fourths acres, be the same more or less.
       </p>
       <p>Also one other tract on the River Eno and on the south side thereof adjoining to the tract last above described it being part of the tract of land conveyed by Charles Kennon to Richard Bennehan by deed bearing date the 30th July 1806 and bounded as follows – Beginning at a sycamore on the bank of Eno &hellip; containing one hundred acres be the same more or less.</p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1826-10-06 &mdash; Blount Cooper to Thomas D. Bennehan</h2>
       <h3>Wake DB 7-168</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-57.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> October 6, 1826 <br>
         <b>deed date:</b> September 26, 1826 <br>
         <b>from:</b> Blount Cooper <br>
@@ -1124,11 +1277,14 @@
         <li>up the creek to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1830-03-13 &mdash; W. A. Thorpe to Thomas D. Bennehan</h2>
       <h3>Wake DB 9-315</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-60.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> March 13, 1830 <br>
         <b>deed date:</b> April 29, 1829 <br>
         <b>from:</b> William A. Thorpe <br>
@@ -1146,11 +1302,14 @@
         <li>up the North East Fork to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1830-09-28 &mdash; Nathaniel Robards to Thomas D. Bennehan</h2>
       <h3>Granville DB 4-432</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-61.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> September 28, 1830 <br>
         <b>from:</b> Nathaniel Robards <br>
         <b>to:</b> Thomas D. Bennehan <br>
@@ -1171,11 +1330,14 @@
         </li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1831-02-01 &mdash; Heirs of Margaret Cain Few to Duncan Cameron</h2>
       <h3>Orange DB 24-313</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-64.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> February 1831 <br>
         <b>from:</b> Heirs of Margaret Cain Few (sister of Hugh Cain) <br>
         <b>to:</b> Duncan Cameron <br>
@@ -1183,7 +1345,7 @@
         <b>acres:</b> 120.75 <br>
         <b>description:</b>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <!--<div class="deed">
       <h2>1831-05-09 &mdash; Richard Boyd to Thomas D. Bennehan</h2>
@@ -1204,6 +1366,9 @@
     <div class="deed">
       <h2>1831-11-26 &mdash; Heirs of William Cain to Duncan Cameron</h2>
       <h3>Orange DB 25-10</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-68.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> November 26, 1831 <br>
         <b>from:</b> John Cain, James Cain, William Cain, Allen Cain, David Irvin and Fanny his wife, Lewis Cason &
         Margaret his wife (of Williamson County, Mississippi) William Hall, Samuel Hall, Sarah Hall & Nancy Hall (of
@@ -1222,11 +1387,14 @@
         <li>up the meander of the river to the first station</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1832-11-27 &mdash; Heirs of Allen Cain to Duncan Cameron</h2>
       <h3>Orange DB 25-242</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-70.png"></div>
+        <div class="deed-details">
       <p><b>date:</b> November 27, 1832 <br>
         <b>from:</b> Heirs of Allen Cain (Elizabeth Cain, widow of Allen Cain, William Cain & others) <br>
         <b>to:</b> Duncan Cameron <br>
@@ -1235,11 +1403,14 @@
         <b>description:</b> Lot No 6 being the tract designated in the division & allotment of the lands of Hugh Cain decd brother of the said Allen Beginning at a stake corner of Duncan Cameron (corner of Lot No 5 running with the line of said lot north 72 degrees west 73 chains to Little River, thence down the meanders of said River to a stake corner of Allen Cain Lot No 7, thence with his line south 89 degrees east 61 chains to a post oak said Cameron’s Corner, thence with his line north 56 degrees east 10 chains 20 links to the first station containing ninety five & three tenth acres
       </p>
       <p>also one other lot or parcel of land designated in the division of the lands of Hugh & Allen Cains decd as Lot No 7 aforesaid and bounded as follows Beginning at a stake one of the corners of Lot No 6 on little River running south 89 degrees east 61 chains to a post oak Duncan Cameron’s Corner, thence with his line south 14 degrees east 8 chains 50 links to a red oak said Cameron’s Corner, thence with his line south 42 degrees west 42 chains 75 links to a hickory on Little River thence to the first station: containing ninety five & three tenth acres</p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1833-01-15 &mdash; William A. Tharpe to Thomas D. Bennehan</h2>
       <h3>Wake DB 11-13 </h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-71.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> January 15, 1833 <br>
         <b>deed date:</b> March 23, 1830 <br>
         <b>from:</b> William A. Tharpe/Thorpe <br>
@@ -1258,11 +1429,14 @@
         <li>up Panther Creek to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1833-01-15 &mdash; Joseph H. Bryan to Thomas D. Bennehan</h2>
       <h3>Wake DB 11-13 </h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-69.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> January 15, 1833 <br>
         <b>deed date:</b> February 8, 1832 <br>
         <b>from:</b> Joseph H. Bryan <br>
@@ -1287,11 +1461,14 @@
         <li>up the river to the beginning</li>
       </ul>
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1833-06-26 &mdash; John Singleton to Thomas D. Bennehan</h2>
       <h3>Wake DB 11-189</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-59.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> June 26, 1833 <br>
         <b>deed date:</b> October 12, 1827 <br>
         <b>from:</b> John Singleton <br>
@@ -1300,11 +1477,14 @@
         <b>acres:</b> 505.5 <br>
         <b>description:</b> all that tract of land whereon [?] live it being the balance of a seven hundred acre tract of land [purchased from William Bennehan decd, off of which I have sold one hundred and twenty acres to Alexander and seventy four and a half acres to Riley Penny] that Iying and being in the county of Wake and state aforesaid adjoining the lands of the said Thomas D. Bennehan, Alexander Penny, Riley Penny and the heirs of Isaac Whitehead dec’d to have and to hold the above described tract of land containing as aforesaid five hundred five and a half acres more or less
       </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
         <h2>1833-06-27 &mdash; Hudson Yearby to Thomas D. Bennehan</h2>
         <h3>Wake DB 11-199 </h3>
+        <div class="flex">
+          <div class="tract-map"><img class="map-image" src="img/map-63.png"></div>
+          <div class="deed-details">
         <p><b>recorded date:</b> June 27, 1833 <br>
           <b>deed date:</b> January 1, 1831 <br>
           <b>from:</b> Hudson Yearby <br>
@@ -1322,22 +1502,28 @@
           <li>north to the beginning</li>
         </ul>
         </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
         <h2>1834-08-01 &mdash; Thomas D. Bennehan to Paul C. Cameron</h2>
         <h3>Orange DB 28-100</h3>
+        <div class="flex">
+          <div class="tract-map"><img class="map-image" src="img/map-72.png"></div>
+          <div class="deed-details">
         <p><b>date:</b> August 1, 1834 <br>
           <b>from:</b> Thomas D. Bennehan <br>
           <b>to:</b> Paul C. Cameron <br>
           <b>amount paid:</b> love &plus; &dollar;1<br>
           <b>acres:</b> 222 <br>
           <b>description:</b> tract of land lying & being in the county aforesaid on the waters of Flat River it being the tract of land conveyed by John Tilley to Richard Bennehan by deed of 23rd day of December 1801 adjoining the lands of Thomas D. Bennehan, John Horner & others containing by estimation two hundred & twenty two acres</p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
         <h2>1834-11-07 &mdash; Adam and Nancy Douglas to Duncan Cameron</h2>
         <h3>Orange DB 26-322</h3>
+        <div class="flex">
+          <div class="tract-map"><img class="map-image" src="img/map-73.png"></div>
+          <div class="deed-details">
         <p><b>date:</b> November 7, 1834 <br>
           <b>from:</b> Adam and Nancy Douglas (heirs to James Cain) <br>
           <b>to:</b> Duncan Cameron <br>
@@ -1345,11 +1531,14 @@
           <b>acres:</b> 120.75 <br>
           <b>description:</b>
         </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
         <h2>1834-11-07 &mdash; Elizabeth Cain to Duncan Cameron</h2>
         <h3>Orange DB 26-323</h3>
+        <div class="flex">
+          <div class="tract-map"><img class="map-image" src="img/map-74.png"></div>
+          <div class="deed-details">
         <p><b>date:</b> November 7, 1834 <br>
           <b>from:</b> Elizabeth Cain (heir to James Cain) <br>
           <b>to:</b> Duncan Cameron <br>
@@ -1357,11 +1546,14 @@
           <b>acres:</b> 120.75 <br>
           <b>description:</b>
         </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
         <h2>1835-08-25 &mdash; Walter Alves to Duncan Cameron</h2>
         <h3>Orange DB 26-267</h3>
+        <div class="flex">
+          <div class="tract-map"><img class="map-image" src="img/map-75.png"></div>
+          <div class="deed-details">
         <p><b>date:</b> August 25, 1835 <br>
           <b>from:</b> James Alves (executor of Walter Alves) <br>
           <b>to:</b> Duncan Cameron <br>
@@ -1369,11 +1561,14 @@
           <b>acres:</b> 60 <br>
           <b>description:</b> a certain tract or parcel of land situate lying & being in the county of Orange state of No. Carolina aforesaid on the north side of Eno River and bounded as follows Beginning at a small post oak on a high cliff of rocks on the bank of the said river and nearly opposite of Browns Plantation on the south west side of said river the said post oak being the corner of the said Duncan Cameron in a deed heretofore made by the said James Alves to the said Duncan Cameron, running thence along the said Cameron’s line to his corner on the bank of the said River near the mouth of a gut emptying into the said river at the Bucks Shoals, thence up the said River as it meanders to the Beginning, containing by estimation sixty acres more or less it being the same tract of land formerly called & known as Darby Callahan’s tract and on which Penny Weaver lately resided
         </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
         <h2>1836-04-30 &mdash; John Brown to Duncan Cameron</h2>
         <h3>Orange DB 27-160</h3>
+        <div class="flex">
+          <div class="tract-map"><img class="map-image" src="img/map-76.png"></div>
+          <div class="deed-details">
         <p><b>date:</b> April 30, 1836 <br>
           <b>from:</b> John Brown <br>
           <b>to:</b> Duncan Cameron <br>
@@ -1381,11 +1576,14 @@
           <b>acres:</b> 15 <br>
           <b>description:</b> tract of land situate lying & being in the county of Orange on the north side of Eno & bounded as follows to wit – Beginning at a Spanish oak on the North Bank of Eno thence north ten chains to a white oak thence west fifteen chains to a crabapple thence south to the Eno River thence down the same to the Beginning containing fifteen acres
         </p>
-    </div>
+    </div></div></div>
     <hr>
     <div class="deed">
       <h2>1839-05-?? &mdash; John Green heirs to Thomas D. Bennehan</h2>
       <h3>Granville DB 9-496</h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src=""></div>
+        <div class="deed-details">
       <p><b>date:</b> May 1839 <br>
         <b>from:</b> Clement Wilkins, Mary A. Green, John B. Green, William Terry, Joseph Green, and George W. Green /
         heirs of John Green <br>
@@ -1394,23 +1592,30 @@
         <b>acres:</b> 142 <br>
         <b>description:</b> all that certain tract of land situate lying and being in the county of Granville, commencing at a corner on the north bank of the River Neuse (now Bennehan’s corner formerly Self’s and late Ball’s corner) thence down the river as it meanders to a second corner of said Bennehan’s (late Hunt’s) thence with the lines and corners of the Self, Hunt, and Coley tracts as they are commonly called to the beginning. the same being a tract of land of which the late John Green died seized and possessed &hellip; containing by estimation one hundred and forty two acres
       </p>
-    </div>
+    </div></div></div>
     <hr>
-    <div class="deed">
+<div class="deed"></div>
       <h2>1844-04-06 &mdash; Leonard Laws to Duncan Cameron</h2>
       <h3>Orange DB 31-24</h3>
-      <p><b>date:</b> April 6, 1844 <br>
-        <b>from:</b> Leonard Laws <br>
-        <b>to:</b> Duncan Cameron <br>
-        <b>amount paid:</b> &dollar;800 <br>
-        <b>acres:</b> 180<br>
-        <b>description:</b> tract or parcel of land situate lying & being in the county of Orange aforesaid bounded on the west by Flat River, on the south by the land of said Cameron (the Brick House tract) on the east by the land [Veazey?] in the north by the land formerly William Laws containing by estimation one hundred & eighty acres
-      </p>
-    </div>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-79.png"></div>
+        <div class="deed-details">
+        <p><b>date:</b> April 6, 1844 <br>
+          <b>from:</b> Leonard Laws <br>
+          <b>to:</b> Duncan Cameron <br>
+          <b>amount paid:</b> &dollar;800 <br>
+          <b>acres:</b> 180<br>
+          <b>description:</b> tract or parcel of land situate lying & being in the county of Orange aforesaid bounded on the west by Flat River, on the south by the land of said Cameron (the Brick House tract) on the east by the land [Veazey?] in the north by the land formerly William Laws containing by estimation one hundred & eighty acres
+        </p>
+      </div>
+    </div></div>
     <hr>
-    <div class="deed">
+      <div class="deed">
       <h2>1858-07-06 &mdash; Fendal Southerland to George W. Mordecai</h2>
       <h3>Wake DB 22-229 </h3>
+      <div class="flex">
+        <div class="tract-map"><img class="map-image" src="img/map-97.png"></div>
+        <div class="deed-details">
       <p><b>recorded date:</b> July 6, 1858 <br>
         <b>deed date:</b> November 10, 1857 <br>
         <b>from:</b> Fendal Southerland <br>
@@ -1437,6 +1642,6 @@
         <li>north 6&deg; east 6 chains 50 links</li>
         <li>north 11&deg; east ? chains 80 links to a maple on Neuse River</li>
         <li>down the river to the beginning</li>
-      </ul>
+      </ul></p></div></div></div>
     </div>
 </body>
