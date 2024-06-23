@@ -293,6 +293,7 @@ map.on("load", () => {
     let deedcounty = e.features[0].properties.deedcounty;
     let itemnotes = e.features[0].properties.notes;
     let plantationname = e.features[0].properties.plantation;
+    let idnum = e.features[0].id;
     let county;
     if (deedcounty !== null && deedcounty !== undefined) {
       county = deedcounty + " DB ";
@@ -323,7 +324,7 @@ map.on("load", () => {
         " through " +
         enddate +
         "</p>" +
-        "<p><strong>Source: </strong>" +
+        '<p><strong><a href="/sources.html#' + idnum + '"> Source:</a> </strong>' +
         county +
         db +
         "</p>" +
