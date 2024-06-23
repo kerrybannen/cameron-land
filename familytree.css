@@ -1,6 +1,38 @@
-body {
+.familytree {
     margin-right: 5%;
+    margin-left: 2%;
 }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: white;
+  }
+  
+nav li {
+    display: inline;
+    float: left;
+    font: 15px "DIN Pro Medium", Verdana, Helvetica, sans-serif;
+  }
+  
+nav li .active {
+    font-weight: bold;
+  }
+  
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+nav li a:hover {
+    background-color: #c9c9c9
+  }
 
 small.marriage {
     color: crimson;
@@ -13,7 +45,7 @@ span.notes {
     content: leader(dotted);
 }
 
-li::before {
+.familytree li::before {
     /*Using a Bootstrap glyphicon as the bullet point*/
     content: "\e080";
     font-family: 'Glyphicons Halflings';
@@ -23,7 +55,7 @@ li::before {
     margin-left: -17px;
 }
 
-li {
+.familytree li {
     display: block;
 }
 
