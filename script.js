@@ -324,7 +324,7 @@ map.on("load", () => {
         " through " +
         enddate +
         "</p>" +
-        '<p><strong><a href="/sources.html#' + idnum + '"> Source:</a> </strong>' +
+        '<p><strong><a href="/cameron/sources.html#' + idnum + '" ' + 'target="source">Source</a>: </strong>' +
         county +
         db +
         "</p>" +
